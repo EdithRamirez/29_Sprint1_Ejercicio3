@@ -7,14 +7,15 @@ canvas{
 .texto{
 	padding: 6%;
 	font-weight: bold;
+	border-radius: 10px;
 }
+/*animacion cambio de color frase1*/
 #frase1{
 	background-color: #046957;
 	color: #fff;
 	animation-name: fraseuno;
 	animation-duration: 5s;
 }
-/*animacion cambio de color frase1*/
 @-webkit-keyframes fraseuno{
 	from{
 		background-color: #046957;
@@ -23,13 +24,14 @@ canvas{
 		background-color: #153832;
 	}
 }
+/*animacion cambio de color frase2*/
 #frase2{
 	background-color: #F7B733;
 	color: #fff;
 	animation-name: frasedos;
 	animation-duration: 5s;
 }
-/*animacion cambio de color frase2*/
+
 @-webkit-keyframes frasedos{
 	from{
 		background-color: #F7B733;
@@ -38,22 +40,22 @@ canvas{
 		background-color: #CC2937;
 	}
 }
+/*animacion cambio de color frase1*/
 #frase3{
-	background-color: #046957;
+	background-color: #78BCE7;
 	color: #fff;
 	animation-name: frasetres;
 	animation-duration: 5s;
 }
-/*animacion cambio de color frase1*/
+
 @-webkit-keyframes frasetres{
 	from{
-		background-color: #046957;
+		background-color: #78BCE7;
 	}
 	to{
-		background-color: #153832;
+		background-color: ##29B543;
 	}
 }
-
 /*titulo*/
 h2{
 	text-decoration: none;
@@ -86,18 +88,17 @@ h2{
 /*texto debajo de foto*/
 .problema{
 	font-size: 2em;
-
 }
-
-
 /*footer*/
 .correo{
-	text-decoration: underline;
+	color: #E3B22D;
 }
 /*iconos*/
 .glyphicon{
 	font-size: 3em;
 	color: #E83B7D;
 }
-
-/*padding y margin*/
+/*nombre*/
+.nombre{
+	color: #A31439;
+}

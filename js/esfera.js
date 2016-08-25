@@ -1,8 +1,8 @@
 window.onload = function() {
 	try {
 		TagCanvas.Start('myCanvas','tags',{
-		textColour: 'black',
-		outlineColour: '#ff00ff',
+		textColour: '#F75B7D',
+		outlineColour: '#A3145A',
 		reverse: true,
 		depth: 0.8,
 		maxSpeed: 0.05
