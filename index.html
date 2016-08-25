@@ -8,16 +8,36 @@
 		<link rel="stylesheet" type="text/css" href="css/style.css"><!--mis estilos-->
 	</head>
 	<body>
+		<header><!--inicio de encabezado-->
+			<div class="container">
+				<div class="row"><!--inicio renglon de menu-->
+					<div class="col-xs-12 col-md-12 col-lg-12">
+						<nav class="navbar navbar-default" role="navigation""><!--inicio de menu-->
+							<div class="container-fluid">
+								<div class="navbar-header">
+									<button type="button" class="navbar-toggle" data-toggle="collapse"
+									data-target="#navegador">
+										<span class="sr-only">Menu</span>
+										<span class="icon-bar"></span>
+										<span class="icon-bar"></span>
+										<span class="icon-bar"></span>
+									</button>
+									<a class="navbar-brand" href="#">DejaloIR</a>
+								</div>
+								<div class="collapse navbar-collapse navbar-right" id="nav-responsive">
+									<ul class="nav navbar-nav">
+										<li><a href="#herramientas">HERRAMIENTAS</a></li>
+										<li><a href="#testimonios">TESTIMONIOS</a></li>
+										<li><a href="#contacto">CONTACTO</a></li>
+									</ul>
+								</div>
+							</div>
+						</nav>
+					</div>
+				</div>
+			</div>
+		<header>
 		<div class="container">
-			<header>
-				<nav>
-					<ul>
-						<li>HERRAMIENTAS</li>
-						<li>TESTIMONIO</li>
-						<li>CONTACTO</li>
-					</ul>
-				</nav>
-			</header>
 			<article>
 				<section>
 					<div class="row">
@@ -66,17 +86,17 @@
 						<div class="col-xs-12 col-sm-6 col-lg-6"><!--inicio de textos-->
 							<div class="row"><!--inicio texto1 con animacion-->
 								<div class="col-xs-12 col-sm-12 col-lg-12">
-									<p>preguntas</p>
+									<p id="frase1" class="texto">"La administración del tiempo consiste en ordenar y sistematizar los periodos de dedicación de las actividades cotidianas que realizas frecuentemente."</p>
 								</div>
 							</div><!--fin texto1 con animacion-->
 							<div class="row"><!--inicio texto2 con animacion-->
 								<div class="hidden-xs col-sm-12 col-lg-12">
-									<p>preguntas</p>
+									<p id="frase2" class="texto">"No dejes las cosas para después"</p>
 								</div>
 							</div><!--fin texto2 con animacion-->
 							<div class="row"><!--inicio texto3 con animacion-->
 								<div class="hidden-xs col-sm-12 col-lg-12">
-									<p>preguntas</p>
+									<p id="frase3" class="texto">preguntas</p>
 								</div>
 							</div><!--fin texto3 con animacion-->
 						</div><!--fin de textos-->
@@ -84,39 +104,39 @@
 				</section>
 				<section>
 					<div class="row">
-						<div class="col-xs-12 col-sm-12 col-lg-12"><!--titulo-->
-							<h2>HERRAMIENTAS</h2>
+						<div class="col-xs-12 col-sm-12 col-lg-12 text-center pd-5"><!--titulo-->
+							<a name="herramientas"><h2>HERRAMIENTAS</h2></a>
 						</div>
 					</div>
 					<div class="row"><!--inicio foto con link-->
 						<div class="col-xs-12 col-sm-6 col-lg-3">
-							<a href="https://trello.com/" target="_blank"><img src="img/logos/trello.png" class="img-responsive" alt="trello"></a><!--trello-->
+							<a href="https://trello.com/" target="_blank"><img src="img/logos/trello.png" class="img-responsive logo" alt="trello"></a><!--trello-->
 							<div class="row">
-								<div class="col-xs-12 col-sm-6 col-lg-12">
+								<div class="col-xs-12 col-sm-6 col-lg-12 text-center">
 									<p>Un servicio de gestón de proyectos que permite organizar tareas y trabaja de forma colaborativa mediante tableros</p><!--trello-->
 								</div>
 							</div>
 						</div>
 						<div class="col-xs-12 col-sm-6 col-lg-3">
-							<a href="https://asana.com/" target="_blank"><img src="img/logos/asana.png" class="img-responsive" alt="asana"></a><!--asana-->
+							<a href="https://asana.com/" target="_blank"><img src="img/logos/asana.png" class="img-responsive logo" alt="asana"></a><!--asana-->
 							<div class="row">
-								<div class="col-xs-12 col-sm-6 col-lg-12">
+								<div class="col-xs-12 col-sm-6 col-lg-12 text-center">
 									<p>Aplicación web y móvil diseñada para mejorar la comunicación y colaboración en equipo.</p><!--asana-->
 								</div>
 							</div>
 						</div>
 						<div class="col-xs-12 col-sm-6 col-lg-3">
-							<a href="https://www.zoho.com/" target="_blank"><img src="img/logos/zoho.jpg" class="img-responsive" alt="zaho"></a><!--zoho-->
+							<a href="https://www.zoho.com/" target="_blank"><img src="img/logos/zoho.jpg" class="img-responsive logo" alt="zaho"></a><!--zoho-->
 							<div class="row">
-								<div class="col-xs-12 col-sm-6 col-lg-12">
+								<div class="col-xs-12 col-sm-6 col-lg-12 text-center">
 									<p>Conocido para ampliar características que las empresas pueden usar para organizar su flujo de información.</p><!--zoho-->
 								</div>
 							</div>
 						</div>
 						<div class="col-xs-12 col-sm-6 col-lg-3">
-							<a href="https://basecamp.com/" target="_blank"><img src="img/logos/basecamp.png" class="img-responsive" alt="basecamp"></a><!--basecamp-->
+							<a href="https://basecamp.com/" target="_blank"><img src="img/logos/basecamp.png" class="img-responsive logo" alt="basecamp"></a><!--basecamp-->
 							<div class="row">
-								<div class="col-xs-12 col-sm-6 col-lg-12">
+								<div class="col-xs-12 col-sm-6 col-lg-12 text-center">
 									<p>Una herramienta de gestión de proyectos para el seguimiento de programas, archivos y listas de tareas.</p><!--basecamp-->
 								</div>
 							</div>
@@ -125,79 +145,100 @@
 				</section>
 				<section>
 					<div class="row">
-						<div class="col-xs-12 col-sm-12 col-lg-12"><!--titulo-->
-							<h2>TESTIMONIOS</h2>
+						<div class="col-xs-12 col-sm-12 col-lg-12 text-center"><!--titulo-->
+							<a name="testimonios"><h2>TESTIMONIOS</h2></a>
 						</div>
 					</div>
 					<div class="row"><!--inicio de fotos con aminacion-->
 						<div class="col-xs-12 col-sm-6 col-lg-4">
-							<a href="#"><img src="img/edith1.jpg" class="img-responsive fotos" alt="edith01"></a><!--foto/animacion-->
+							<div class="contenedor"><!--inicio contenedor foto-->
+								<img src="img/edith2.jpg" class="img-responsive fotos" alt="edith01"><!--foto/animacion-->
+								<img src="img/edith1.jpg" class="img-responsive fotos oculta" alt="edith01"><!--foto/animacion-->
+							</div><!--fin contenedor foto-->
+							<div class="row"><!--inicio problemas-->
+								<div class="col-xs-12 col-sm-6 col-lg-12 text-center">
+									<p class="problema">Problema</p>
+								</div>
+							</div><!--fin problemas-->
+							<div class="row"><!--inicio solucion-->
+								<div class="col-xs-12 col-sm-6 col-lg-12 text-center">
+									<p>Solución</p>
+								</div><!--fin solucion-->
+							</div>
 						</div>
 						<div class="col-xs-12 col-sm-6 col-lg-4">
-							<a href="#"><img src="img/elief1.png" class="img-responsive fotos" alt="elief01"></a><!--foto/animacion-->
+							<div class="contenedor"><!--inicio contenedor foto-->
+								<img src="img/elief2.jpg" class="img-responsive fotos" alt="elief01"><!--foto/animacion-->
+								<img src="img/elief1.png" class="img-responsive fotos oculta" alt="elief02"><!--foto/animacion-->
+							</div><!--fin contenedor foto-->
+							<div class="row"><!--inicio problemas-->
+								<div class="col-xs-12 col-sm-6 col-lg-12 text-center">
+									<p class="problema">Problema</p>
+								</div>
+							</div><!--fin problemas-->
+							<div class="row"><!--inicio solucion-->
+								<div class="col-xs-12 col-sm-6 col-lg-12 text-center">
+									<p>Solución</p>
+								</div><!--fin solucion-->
+							</div>
 						</div>
 						<div class="col-xs-12 col-sm-6 col-lg-4">
-							<a href="#"><img src="img/irma1.jpg" class="img-responsive fotos" alt="irma01"></a><!--foto/animacion-->
+							<div class="contenedor"><!--inicio contenedor foto-->
+								<img src="img/irma2.jpg" class="img-responsive fotos" alt="irma01"><!--foto/animacion-->
+								<img src="img/irma1.jpg" class="img-responsive fotos oculta" alt="irma01"><!--foto/animacion-->
+							</div><!--fin contenedor foto-->
+							<div class="row"><!--inicio problemas-->
+								<div class="col-xs-12 col-sm-6 col-lg-12 text-center">
+									<p class="problema">Problema</p>
+								</div>
+							</div><!--fin problemas-->
+							<div class="row"><!--inicio solucion-->
+								<div class="col-xs-12 col-sm-6 col-lg-12 text-center">
+									<p>Solución</p>
+								</div><!--fin solucion-->
+							</div>
 						</div>
 					</div><!--fin de fotos con aminacion-->
-					<div class="row"><!--inicio problemas-->
-						<div class="col-xs-12 col-sm-6 col-lg-3">
-							<p></p><!--problemas en administracion-->
-						</div>
-						<div class="col-xs-12 col-sm-6 col-lg-3">
-							<p></p><!--problemas en administracion-->
-						</div>
-						<div class="col-xs-12 col-sm-6 col-lg-3">
-							<p></p><!--problemas en administracion-->
-						</div>
-					</div><!--fin problemas-->
-					<div class="row"><!--inicio solucion-->
-						<div class="col-xs-12 col-sm-6 col-lg-3">
-							<p></p><!--solucion problema-->
-						</div>
-						<div class="col-xs-12 col-sm-6 col-lg-3">
-							<p></p><!--solucion problema-->
-						</div>
-						<div class="col-xs-12 col-sm-6 col-lg-3">
-							<p></p><!--solucion problema-->
-						</div>
-					</div><!--fin solucion-->
 				</section>
 			</article>
 			<footer><!--inicio de pie de pagina-->
 				<div class="row">
-					<div class="col-xs-6 col-sm-4 col-lg-2"><!--contacto-->
+					<div class="col-xs-12 col-sm-12 col-lg-12 text-center">
+					<a name="contacto"><h2>CONTACTO</h2></a>
+				</div>
+				<div class="row">
+					<div class="col-xs-6 col-sm-4 col-lg-2 text-center"><!--contacto-->
 						<p>Carmen Camacho</p>
 						<span class="glyphicon glyphicon-envelope" aria-hidden="true"></span>
-						<p>carmen.camacho.rodriguez@gmail.com</p>	
+						<p class="correo">carmen.camacho@gmail.com</p>	
 					</div>
-					<div class="col-xs-6 col-sm-4 col-lg-2"><!--contacto-->
+					<div class="col-xs-6 col-sm-4 col-lg-2 text-center"><!--contacto-->
 						<p>Edith Ramírez</p>
 						<span class="glyphicon glyphicon-envelope" aria-hidden="true"></span>
-						<p>ediths.ramirez07@gmail.com</p>
+						<p class="correo">ediths.ramirez07@gmail.com</p>
 					</div>
 					<div class="clearfix visible-xs-block"></div>
-					<div class="col-xs-6 col-sm-4 col-lg-2"><!--contacto-->
+					<div class="col-xs-6 col-sm-4 col-lg-2 text-center"><!--contacto-->
 						<p>Elief Gallo</p>
 						<span class="glyphicon glyphicon-envelope" aria-hidden="true"></span>
-						<p>in_lovelieph@hotmail.com</p>
+						<p class="correo">in_lovelieph@hotmail.com</p>
 					</div>
 					<div class="clearfix visible-sm-block"></div>
-					<div class="col-xs-6 col-sm-4 col-lg-2"><!--contacto-->
+					<div class="col-xs-6 col-sm-4 col-lg-2 text-center"><!--contacto-->
 						<p>Irma Alcantar</p>
 						<span class="glyphicon glyphicon-envelope" aria-hidden="true"></span>
-						<p>irma.alcantar.m@gmail.com</p>
+						<p class="correo">irma.alcantar.m@gmail.com</p>
 					</div>
 					<div class="clearfix visible-xs-block"></div>
-					<div class="col-xs-6 col-sm-4 col-lg-2"><!--contacto-->
+					<div class="col-xs-6 col-sm-4 col-lg-2 text-center"><!--contacto-->
 						<p>Sandra Rodríguez</p>
 						<span class="glyphicon glyphicon-envelope" aria-hidden="true"></span>
-						<p>san.rodzrosales@gmail.com</p>
+						<p class="correo">san.rodzrosales@gmail.com</p>
 					</div>
-					<div class="col-xs-6 col-sm-4 col-lg-2"><!--contacto-->
+					<div class="col-xs-6 col-sm-4 col-lg-2 text-center"><!--contacto-->
 						<p>Okaidy German</p>
 						<span class="glyphicon glyphicon-envelope" aria-hidden="true"></span>
-						<p>okaidy.german@gmail.com</p>
+						<p class="correo">okaidy.german@gmail.com</p>
 					</div>
 				</div>
 			</footer><!--fin de pie de pagina-->
